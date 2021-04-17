@@ -3,6 +3,7 @@ import styles from "./DonateForm.module.scss";
 import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image'
 
 const Donate = () => {
   return (
@@ -12,7 +13,7 @@ const Donate = () => {
         <Form.Group controlId="formBasicName">
             <InputGroup className="mb-2">
               <InputGroup.Prepend>
-                <InputGroup.Text></InputGroup.Text>
+                <InputGroup.Text><Image src="../../assets/Icons/name.png" rounded/></InputGroup.Text>
               </InputGroup.Prepend>
               <Form.Control type="Name" placeholder="Name" />
             </InputGroup>
