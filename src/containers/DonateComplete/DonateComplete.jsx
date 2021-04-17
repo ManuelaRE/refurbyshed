@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./DonateComplete.module.scss";
 import Image from 'react-bootstrap/Image';
-import logo from '../../assets/logo.png'
+import logo from '../../img/HatchfulExport-All/logo_transparent.png'
 
 const DonateComplete = () => {
   return (
