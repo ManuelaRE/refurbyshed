@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "./SingleItem.module.scss";
+import { Link } from "@reach/router";
 
 export class SingleItem extends Component {
   render() {
@@ -17,6 +18,12 @@ export class SingleItem extends Component {
 
           <p>by {make}</p>
           <p>{condition}</p>
+          <Link
+            to={`/itemView/${name}/${make}/${price}/${condition}`}
+            className={styles.links}
+          >
+            <p>More info</p>
+          </Link>
         </div>
       </div>
     );

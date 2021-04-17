@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import database from "firebase/database";
 import firebase from "firebase";
 import config from "../../config";
 import SingleItem from "../../components/SingleItem/SingleItem";
@@ -27,9 +26,10 @@ export class ItemListings extends Component {
     return (
       <div>
         <h1>Search bar</h1>
-        {this.state.itemList.map((item) => {
+        {this.state.itemList.map((item, index) => {
           return (
             <SingleItem
+              key={index}
               name={item.name}
               make={item.make}
               condition={item.condition}
