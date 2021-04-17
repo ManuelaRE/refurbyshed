@@ -1,0 +1,20 @@
+p.nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.link {
+  width: 100px;
+  text-align: center;
+}
+
+.navContainer {
+  margin-top: 20px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: whitesmoke;
+}
+/*# sourceMappingURL=StickyNavbar.module.css.map */

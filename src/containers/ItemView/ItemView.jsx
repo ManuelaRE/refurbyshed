@@ -4,6 +4,7 @@ import { Link } from "@reach/router";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import arrow from "../../assets/Icons/backArrow.png";
+import SubmitButton from "../../components/SubmitButton/SubmitButton";
 
 export class ItemView extends Component {
   render() {
@@ -26,11 +27,11 @@ export class ItemView extends Component {
           </div>
         </div>
         <div className={styles.button}>
-          <Link to="/reserveform">
-            <Button variant="primary" className="rounded-pill">
-              Reserve
-            </Button>
-          </Link>
+          <SubmitButton
+            onClick={() => console.log("HEY")}
+            name="Reserve"
+            className={styles.submit}
+          />
         </div>
       </>
     );

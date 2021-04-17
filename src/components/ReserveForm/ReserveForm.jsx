@@ -72,7 +72,6 @@ export class ReseveForm extends Component {
               />
             </InputGroup>
           </Form.Group>
-
           <SubmitButton
             name="Reserve"
             className={styles.submit}

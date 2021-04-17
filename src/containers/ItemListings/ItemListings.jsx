@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import firebase from "firebase";
 import config from "../../config";
 import SingleItem from "../../components/SingleItem/SingleItem";
+import NavBar from "../../components/Navbar";
 
 export class ItemListings extends Component {
   state = {

@@ -47,4 +47,10 @@ p.boldText {
 div.button {
   text-align: center;
 }
+
+div.link {
+  border-width: 3px;
+  border-color: red;
+  border-style: solid;
+}
 /*# sourceMappingURL=ItemView.module.css.map */

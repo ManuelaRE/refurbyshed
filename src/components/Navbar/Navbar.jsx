@@ -1,23 +1,33 @@
-import React from 'react'
+import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import styles from "./StickyNavbar.module.scss";
 
 const StickyNavbar = () => {
   return (
-    <Container>
-      <Navbar expand="lg" variant="light" bg="light">
-            <Container>
-            <Nav className="mr-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/listings">Listings</Nav.Link>
-              <Nav.Link href="/donate">Donate</Nav.Link>
+    <div className={styles.navContainer}>
+      <Container>
+        <Navbar expand="lg" variant="light" bg="light">
+          <Container>
+            <Nav>
+              <p className={styles.nav}>
+                <Nav.Link className={styles.link} href="/">
+                  Home
+                </Nav.Link>
+                <Nav.Link className={styles.link} href="/listings">
+                  Listings
+                </Nav.Link>
+                <Nav.Link className={styles.link} href="/donate">
+                  Donate
+                </Nav.Link>
+              </p>
             </Nav>
-            </Container>
-          </Navbar>
-    </Container>
+          </Container>
+        </Navbar>
+      </Container>
+    </div>
+  );
+};
 
-  )
-}
-
-export default StickyNavbar
+export default StickyNavbar;
