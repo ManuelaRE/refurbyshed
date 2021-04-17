@@ -9,7 +9,12 @@ export class ItemListings extends Component {
   };
 
   componentDidMount = async () => {
-    firebase.initializeApp(config);
+    if (!firebase.apps.length) {
+      firebase.initializeApp(config);
+    } else {
+      firebase.app(); // if already initialized, use that one
+    }
+
     const itemRef = firebase.database().ref("Listings");
 
     itemRef.on("value", (snapshot) => {
