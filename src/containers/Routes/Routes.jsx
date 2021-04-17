@@ -14,7 +14,7 @@ class Routes extends Component {
       <Router>
         <Home default />
         <ItemListings path="/listings" />
-        <ItemView path="/itemView/:name?/:make?/:price?/:condition?/" />
+        <ItemView path="/itemView/:name/:make/:price/:condition/:imageUrl" />
         <Donate path="/donate" />
         <DonateComplete path="/donatecomplete" />
         <ReserveForm path="/reserveform" />

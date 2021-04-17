@@ -7,24 +7,16 @@ import arrow from "../../assets/Icons/backArrow.png";
 
 export class ItemView extends Component {
   render() {
-    const { name, make, price, condition, image, imageUrl } = this.props;
-    console.log("PARAMS", name, make, price, condition, image, imageUrl);
+    const { name, make, price, condition, imageUrl } = this.props;
+    const decodedUri = decodeURIComponent(imageUrl);
     return (
       <>
         <div className={styles.container}>
-          <Link to="/itemView">
-            <Image src={arrow} height="50" />\
+          <Link to="/listings">
+            <Image src={arrow} height="50" />
           </Link>
-
           <div className={styles.imgContainer}>
-            <img
-              width="150"
-              height="150"
-              alt="my one"
-              src={
-                "https://www.easyequipment.com/media/catalog/product/cache/1/thumbnail/330x/9df78eab33525d08d6e5fb8d27136e95/G/H/GH560_Bolero_1.jpg"
-              }
-            />
+            <img width="150" height="150" alt="my one" src={decodedUri} />
           </div>
           <div className={styles.textContainer}>
             <p className={styles.boldText}>{name}</p>

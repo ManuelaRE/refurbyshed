@@ -5,6 +5,7 @@ import { Link } from "@reach/router";
 export class SingleItem extends Component {
   render() {
     const { name, make, price, condition, imageUrl } = this.props;
+
     return (
       <div className={styles.container}>
         <div className={styles.imgContainer}>
@@ -13,13 +14,15 @@ export class SingleItem extends Component {
         <div className={styles.textContainer}>
           <div className={styles.namePrice}>
             <p>{name}</p>
-            <p>£{price}</p>
+            <p className={styles.price}>£{price}</p>
           </div>
 
           <p>by {make}</p>
           <p>{condition}</p>
           <Link
-            to={`/itemView/${name}/${make}/${price}/${condition}`}
+            to={`/itemView/${name}/${make}/${price}/${condition}/${encodeURIComponent(
+              imageUrl
+            )}`}
             className={styles.links}
           >
             <p>More info</p>
