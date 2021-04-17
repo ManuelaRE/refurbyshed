@@ -1,0 +1,34 @@
+.container {
+  background-color: #EDC300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  .card {
+    background-color: #EDC300;
+    .cardTitle {
+      text-align: center;
+      font-family: 'Antonio', sans-serif;
+      font-size: xx-large;
+      padding-top: 3%;
+    }
+
+    .cardBody {
+      text-align: center;
+      font-family: 'Antonio', sans-serif;
+      font-size: x-large;
+
+      .list {
+        background-color: #EDC300;
+        margin: 5% 0;
+        // border: 2px solid red;
+      }
+
+      .image {
+        max-height: 400px;
+      }
+    }
+  }
+}

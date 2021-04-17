@@ -1,0 +1,31 @@
+
+.container {
+  background-color: #58A4B0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .card {
+    background-color: #58A4B0;
+    border: none;
+
+    .cardBody {
+      text-align: center;
+      font-family: 'Antonio', sans-serif;
+      font-size: xx-large;
+    }
+  }
+
+  .image {
+    max-height: 450px;
+  }
+
+  .arrow {
+    max-height: 70px;
+  }
+}
+
+
+
