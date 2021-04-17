@@ -4,23 +4,11 @@ import Button from "react-bootstrap/Button";
 const SubmitButton = (props) => {
   const [isLoading, setLoading] = useState(false);
 
-  function simulateNetworkRequest() {
-    return new Promise((resolve) => setTimeout(resolve, 500));
-  }
-
-  function LoadingButton() {
-    useEffect(() => {
-      if (isLoading) {
-        simulateNetworkRequest().then(() => {
-          setLoading(false);
-        });
-      }
-    }, [isLoading]);
-  }
-
   const handleClick = () => {
     setLoading(true);
-    props.onClick();
+    setTimeout(() => {
+      props.onClick();
+    }, 500);
   };
 
   return (

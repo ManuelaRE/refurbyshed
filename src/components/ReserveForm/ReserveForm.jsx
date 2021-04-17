@@ -7,6 +7,7 @@ import Image from "react-bootstrap/Image";
 import nameImg from "../../assets/Icons/name.png";
 import emailImg from "../../assets/Icons/email.png";
 import phoneImg from "../../assets/Icons/phone.png";
+import { navigate } from "@reach/router";
 import { sendMail } from "../../utils/sendMail";
 
 export class ReseveForm extends Component {
@@ -17,6 +18,10 @@ export class ReseveForm extends Component {
   };
 
   render() {
+    const submitDonation = () => {
+      sendMail(this.state.name, this.state.email);
+      navigate("/reservecomplete");
+    };
     return (
       <section className={styles.formBorder}>
         <Form className="d-flex flex-column">
@@ -71,7 +76,7 @@ export class ReseveForm extends Component {
           <SubmitButton
             name="Reserve"
             className={styles.submit}
-            onClick={() => sendMail(this.state.name, this.state.email)}
+            onClick={submitDonation}
           />
         </Form>
       </section>
