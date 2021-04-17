@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Button from 'react-bootstrap/Button';
 
-const SubmitButton = () => {
+const SubmitButton = (props) => {
   const [isLoading, setLoading] = useState(false);
 
   function simulateNetworkRequest() {
@@ -27,8 +27,8 @@ const SubmitButton = () => {
       disabled={isLoading}
       onClick={!isLoading ? handleClick : null}
       className="rounded-pill"
-    >
-      {isLoading ? 'Thank you' : 'Submit'}
+    >  
+      {isLoading ? 'Thank you' : props.name}
     </Button>
   )
 }

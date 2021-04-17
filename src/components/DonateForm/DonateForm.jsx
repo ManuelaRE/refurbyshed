@@ -4,6 +4,10 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
 import SubmitButton from '../SubmitButton/index.js';
 import Image from 'react-bootstrap/Image';
+import nameImg from '../../assets/Icons/name.png';
+import emailImg from '../../assets/Icons/email.png';
+import locationImg from '../../assets/Icons/location.png';
+
 
 
 const DonateForm = () => {
@@ -13,7 +17,7 @@ const DonateForm = () => {
         <Form.Group controlId="formBasicName">
           <InputGroup className="mb-2">
             <InputGroup.Prepend>
-              <InputGroup.Text><Image src="../../assets/Icons/name.png" rounded/></InputGroup.Text>
+              <InputGroup.Text><Image src={nameImg} height="20" rounded/></InputGroup.Text>
             </InputGroup.Prepend>
             <Form.Control type="Name" placeholder="Name" required/>
           </InputGroup>
@@ -22,7 +26,7 @@ const DonateForm = () => {
         <Form.Group controlId="formBasicEmail">
           <InputGroup className="mb-2">
             <InputGroup.Prepend>
-              <InputGroup.Text><Image src="../../assets/Icons/email.png" rounded/></InputGroup.Text>
+              <InputGroup.Text><Image src={emailImg} height="20" rounded/></InputGroup.Text>
             </InputGroup.Prepend>
             <Form.Control type="Email" placeholder="Email address" required/>
           </InputGroup>
@@ -31,7 +35,7 @@ const DonateForm = () => {
         <Form.Group controlId="formBasicLocation">
           <InputGroup className="mb-2">
             <InputGroup.Prepend>
-              <InputGroup.Text><Image src="../../assets/Icons/location.png" rounded/></InputGroup.Text>
+              <InputGroup.Text><Image src={locationImg} height="20" rounded/></InputGroup.Text>
             </InputGroup.Prepend>
             <Form.Control type="Location" placeholder="Location" required/>
           </InputGroup>
@@ -67,7 +71,7 @@ const DonateForm = () => {
           <Form.Control as="textarea" rows={3} placeholder="Item description"/>
         </Form.Group>
         
-        <SubmitButton className={styles.submit}/>
+        <SubmitButton name="Submit" className={styles.submit}/>
       </Form>
     </section>
   );
