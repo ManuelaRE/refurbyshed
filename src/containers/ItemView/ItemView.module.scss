@@ -1,13 +1,14 @@
 div.container {
   padding-left: 2em;
   padding-right: 2em;
+  padding-top: 40px;
 }
 
 div.imgContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -30,4 +31,8 @@ p.boldText {
 
 .price {
   font-size: 30px;
+}
+
+div.button {
+  text-align: center;
 }

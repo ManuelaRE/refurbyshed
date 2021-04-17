@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import styles from "./ItemView.module.scss";
+import { Link } from "@reach/router";
+import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
+import arrow from "../../assets/Icons/backArrow.png";
 
 export class ItemView extends Component {
   render() {
@@ -8,7 +12,10 @@ export class ItemView extends Component {
     return (
       <>
         <div className={styles.container}>
-          <p>Back</p>
+          <Link to="/itemView">
+            <Image src={arrow} height="50" />\
+          </Link>
+
           <div className={styles.imgContainer}>
             <img
               width="150"
@@ -26,8 +33,13 @@ export class ItemView extends Component {
             <p>Condition: {condition}</p>
           </div>
         </div>
-        {/* CLICKING ON RESERVE REDIRECTS TO FORM */}
-        <h3>Reserve</h3>
+        <div className={styles.button}>
+          <Link to="/reserveform">
+            <Button variant="primary" className="rounded-pill">
+              Reserve
+            </Button>
+          </Link>
+        </div>
       </>
     );
   }

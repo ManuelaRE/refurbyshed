@@ -5,7 +5,7 @@ import ItemView from "../ItemView/ItemView";
 import Home from "../../containers/Home";
 import Donate from "../DonatePage/Donate";
 import DonateComplete from "../DonateComplete/DonateComplete";
-import ReserveForm from "../ReserveFormPage/ReserveFormPage";
+import ReserveFormPage from "../ReserveFormPage/ReserveFormPage";
 
 class Routes extends Component {
   render() {
@@ -13,10 +13,10 @@ class Routes extends Component {
       <Router>
         <Home default />
         <ItemListings path="/listings" />
-        <ItemView path="/itemView/:name/:make/:price/:condition/" />
+        <ItemView path="/itemView/:name?/:make?/:price?/:condition?/" />
         <Donate path="/donate" />
         <DonateComplete path="/donatecomplete" />
-        <ReserveForm path="/reserveform" />
+        <ReserveFormPage path="/reserveform" />
       </Router>
     );
   }

@@ -32,4 +32,8 @@ div.namePrice {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+p.buttonText {
+  color: aliceblue;
+}
 /*# sourceMappingURL=SingleItem.module.css.map */
