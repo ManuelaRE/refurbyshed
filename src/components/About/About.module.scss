@@ -1,0 +1,27 @@
+.container {
+
+
+  .card{
+    border: none;
+
+    .cardTitle{
+      text-align: center;
+      font-family: 'Antonio', sans-serif;
+      font-size: xx-large;
+      padding-top: 3%;
+    }
+
+    .cardBody{
+
+
+      .give{
+        max-width: 300px;
+      }
+
+      .textSection{
+        font-family: 'Open Sans', sans-serif;
+        font-size: large;
+      }
+    }
+  }
+}
