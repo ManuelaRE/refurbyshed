@@ -1,0 +1,28 @@
+div.container {
+  border-top-color: black;
+  border-top-width: 2px;
+  border-top-style: solid;
+  display: flex;
+}
+
+div.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+div.textContainer {
+  width: 100%;
+  text-align: left;
+}
+
+div.namePrice {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+p.buttonText {
+  color: aliceblue;
+}

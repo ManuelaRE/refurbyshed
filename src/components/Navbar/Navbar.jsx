@@ -21,6 +21,9 @@ const StickyNavbar = () => {
                 <Nav.Link className={styles.link} href="/donate">
                   Donate
                 </Nav.Link>
+                <Nav.Link className={styles.link} href="/create">
+                  Create
+                </Nav.Link>
               </p>
             </Nav>
           </Container>

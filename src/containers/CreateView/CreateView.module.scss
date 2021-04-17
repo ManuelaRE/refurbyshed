@@ -1,0 +1,44 @@
+div.container {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 40px;
+}
+
+div.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+div.textContainer {
+  width: 100%;
+  text-align: left;
+}
+
+div.namePrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 20px;
+}
+p.boldText {
+  font-weight: bold;
+}
+
+.price {
+  font-size: 30px;
+}
+
+div.button {
+  text-align: center;
+}
+
+div.link {
+  border-width: 3px;
+  border-color: red;
+  border-style: solid;
+}

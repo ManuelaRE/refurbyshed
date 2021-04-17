@@ -2,14 +2,15 @@
   height: 100vh;
   padding-top: 20px;
   background-color: #58a4b0;
-  .title {
-    text-align: center;
-  }
+}
 
-  .submit {
-    border-radius: 5px;
-    margin: 0 auto;
-  }
+.container .title {
+  text-align: center;
+}
+
+.container .submit {
+  border-radius: 5px;
+  margin: 0 auto;
 }
 
 .formContainer {
@@ -17,3 +18,4 @@
   background-color: #58a4b0;
   width: 100vw;
 }
+/*# sourceMappingURL=Donate.module.css.map */
