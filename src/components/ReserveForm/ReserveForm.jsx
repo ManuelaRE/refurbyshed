@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./DonateForm.module.scss";
+import styles from "./ReserveForm.module.scss";
 import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
 import SubmitButton from '../SubmitButton/index.js';

@@ -1,7 +1,14 @@
 .container {
+    height: 100vh;
     padding: 10px;
+    padding-top: 20px;
     background-color: #C1EEFF;
     .title {
         text-align: center;
+    }
+
+    .submit {
+        border-radius: 5px;
+        margin: 0 auto;
     }
 }
