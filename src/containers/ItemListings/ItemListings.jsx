@@ -27,11 +27,6 @@ export class ItemListings extends Component {
     return (
       <div>
         <h1>Search bar</h1>
-        {/* <input
-          type="text"
-          onChange={this.handleOnChange}
-          value={this.state.title}
-        /> */}
         {this.state.itemList.map((item) => {
           return (
             <SingleItem
@@ -43,8 +38,6 @@ export class ItemListings extends Component {
             />
           );
         })}
-        {/* <SingleItem /> */}
-        {/* <button onClick={this.create}>Add Todo </button> */}
       </div>
     );
   }
