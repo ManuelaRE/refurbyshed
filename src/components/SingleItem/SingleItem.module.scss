@@ -1,0 +1,22 @@
+div.container {
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  display: flex;
+}
+
+div.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.textContainer {
+  width: 100%;
+  text-align: left;
+}
+
+div.namePrice {
+  display: flex;
+  justify-content: space-between;
+}
