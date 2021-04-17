@@ -1,22 +1,23 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import styles from './App.module.scss';
+import "bootstrap/dist/css/bootstrap.css";
+import styles from "./App.module.scss";
 import "./custom.scss";
-import DonatePage from "./containers/DonatePage/index.js";
-import ReserveFormPage from "./containers/ReserveFormPage/index.js";
-import DonateComplete from "./containers/DonateComplete/index.js";
-import LandingPage from "./components/LandingPage";
-import WhatWeDo from "./components/WhatWeDo";
-import About from "./components/About";
+import "./App.scss";
+import Routes from "./containers/Routes/Routes";
+import { Link } from "@reach/router";
 
 function App() {
   return (
     <>
-      {/* <ReserveFormPage/> */}
-      {/* <DonatePage/> */}
-      {/* <DonateComplete/> */}
-      {/* <LandingPage/>
-      <WhatWeDo/>
-      <About/> */}
+      <Routes />
+      <Link to={"/"}>
+        <p>Landing</p>
+      </Link>
+      <Link to={"/listings"}>
+        <p>Listings</p>
+      </Link>
+      <Link to={"/donate"}>
+        <p>Donate</p>
+      </Link>
     </>
   );
 }

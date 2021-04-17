@@ -1,0 +1,45 @@
+div.container {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+div.imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+div.textContainer {
+  width: 100%;
+  text-align: left;
+}
+
+div.namePrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+p {
+  font-size: 20px;
+}
+
+p.boldText {
+  font-weight: bold;
+}
+
+.price {
+  font-size: 30px;
+}
+/*# sourceMappingURL=ItemView.module.css.map */

@@ -1,54 +1,43 @@
 import React, { Component } from "react";
-import database from "firebase/database";
 import firebase from "firebase";
 import config from "../../config";
+import SingleItem from "../../components/SingleItem/SingleItem";
 
-class ItemListings extends Component {
+export class ItemListings extends Component {
   state = {
-    title: "",
-    todoList: [],
+    itemList: [],
   };
 
   componentDidMount = async () => {
     firebase.initializeApp(config);
-    const todoRef = firebase.database().ref("Todo");
+    const itemRef = firebase.database().ref("Listings");
 
-    todoRef.on("value", (snapshot) => {
-      const todos = snapshot.val();
-      const todoList = [];
-      for (let id in todos) {
-        todoList.push(todos[id]);
+    itemRef.on("value", (snapshot) => {
+      const items = snapshot.val();
+      const itemList = [];
+      for (let id in items) {
+        itemList.push(items[id]);
       }
-      console.log("TODO LIST", todoList);
-      this.setState({ todoList: todoList });
+      this.setState({ itemList: itemList });
     });
-  };
-
-  handleOnChange = (e: any) => {
-    this.setState({ title: e.target.value });
-  };
-
-  create = () => {
-    const todoRef = firebase.database().ref("Todo");
-
-    const todo = {
-      title: this.state.title,
-      complete: false,
-    };
-
-    todoRef.push(todo);
   };
 
   render() {
     return (
       <div>
-        <h1>MAIN COMPONENT</h1>
-        <input
-          type="text"
-          onChange={this.handleOnChange}
-          value={this.state.title}
-        />
-        <button onClick={this.create}>Add Todo </button>
+        <h1>Search bar</h1>
+        {this.state.itemList.map((item, index) => {
+          return (
+            <SingleItem
+              key={index}
+              name={item.name}
+              make={item.make}
+              condition={item.condition}
+              price={item.price}
+              imageUrl={item.imageUrl}
+            />
+          );
+        })}
       </div>
     );
   }

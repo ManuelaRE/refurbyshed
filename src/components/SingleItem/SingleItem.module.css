@@ -1,0 +1,35 @@
+div.container {
+  border-top-color: black;
+  border-top-width: 2px;
+  border-top-style: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.textContainer {
+  width: 100%;
+  text-align: left;
+}
+
+div.namePrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=SingleItem.module.css.map */
