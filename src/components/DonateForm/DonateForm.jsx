@@ -7,36 +7,36 @@ import Image from 'react-bootstrap/Image';
 import nameImg from '../../assets/Icons/name.png';
 import emailImg from '../../assets/Icons/email.png';
 import locationImg from '../../assets/Icons/location.png';
+import { navigate } from "@reach/router";
 
 
 
 const DonateForm = () => {
+
+  const submitDonation = () => {
+    navigate('/donatecomplete')
+  }
+
   return (
     <section className={styles.formBorder}>
       <Form className="d-flex flex-column">
         <Form.Group controlId="formBasicName">
           <InputGroup className="mb-2">
-            <InputGroup.Prepend>
-              <InputGroup.Text><Image src={nameImg} height="20" rounded/></InputGroup.Text>
-            </InputGroup.Prepend>
+            <Image as={InputGroup.Prepend} src={nameImg} height="38" rounded/>
             <Form.Control type="Name" placeholder="Name" required/>
           </InputGroup>
         </Form.Group>
 
         <Form.Group controlId="formBasicEmail">
           <InputGroup className="mb-2">
-            <InputGroup.Prepend>
-              <InputGroup.Text><Image src={emailImg} height="20" rounded/></InputGroup.Text>
-            </InputGroup.Prepend>
+            <Image as={InputGroup.Prepend} src={emailImg} height="38" rounded/>
             <Form.Control type="Email" placeholder="Email address" required/>
           </InputGroup>
         </Form.Group>
 
         <Form.Group controlId="formBasicLocation">
           <InputGroup className="mb-2">
-            <InputGroup.Prepend>
-              <InputGroup.Text><Image src={locationImg} height="20" rounded/></InputGroup.Text>
-            </InputGroup.Prepend>
+            <Image as={InputGroup.Prepend} src={locationImg} height="38" rounded/>
             <Form.Control type="Location" placeholder="Location" required/>
           </InputGroup>
         </Form.Group>
@@ -71,7 +71,7 @@ const DonateForm = () => {
           <Form.Control as="textarea" rows={3} placeholder="Item description"/>
         </Form.Group>
         
-        <SubmitButton name="Submit" className={styles.submit}/>
+        <SubmitButton onClickEvent={submitDonation} name="Submit" className={styles.submit}/>
       </Form>
     </section>
   );
