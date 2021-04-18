@@ -30,7 +30,7 @@ const DonateForm = () => {
       if (file && file.type.match("image.*")) {
         reader.readAsDataURL(file);
       } else {
-        console.log("HUH");
+        console.log("You encountered an error");
       }
       reader.onloadend = function (e) {
         setImage(reader.result);
