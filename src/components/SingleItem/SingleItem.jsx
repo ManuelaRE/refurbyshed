@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import styles from "./SingleItem.module.scss";
 import { Link } from "@reach/router";
+import Container from 'react-bootstrap/Container';
+import Button from "react-bootstrap/Button"
+
 
 export class SingleItem extends Component {
   render() {
     const { name, make, price, condition, imageUrl } = this.props;
     return (
-      <div className={styles.container}>
+      <Container className={styles.container}>
         <div className={styles.imgContainer}>
           <img width="100" height="100" alt="my one" src={imageUrl} />
         </div>
@@ -22,10 +25,10 @@ export class SingleItem extends Component {
             to={`/itemView/${name}/${make}/${price}/${condition}`}
             className={styles.links}
           >
-            <p>More info</p>
+            <Button variant="outline-primary">More info</Button>
           </Link>
         </div>
-      </div>
+      </Container>
     );
   }
 }

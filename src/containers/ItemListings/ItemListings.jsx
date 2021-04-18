@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import firebase from "firebase";
 import config from "../../config";
 import SingleItem from "../../components/SingleItem/SingleItem";
+import Card from 'react-bootstrap/Card'
+import Container from 'react-bootstrap/Container';
+
+import styles from "./ItemListings.module.scss";
+
 
 export class ItemListings extends Component {
   state = {
@@ -29,8 +34,11 @@ export class ItemListings extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Search bar</h1>
+      <Container fluid className={styles.container}>
+        <Card className={styles.card}>
+        <Card.Title className={styles.cardTitle}>Listings</Card.Title>
+        <Card.Body>
+        <h5>Search bar</h5>
         {this.state.itemList.map((item, index) => {
           return (
             <SingleItem
@@ -43,7 +51,9 @@ export class ItemListings extends Component {
             />
           );
         })}
-      </div>
+        </Card.Body>
+        </Card>
+      </Container>
     );
   }
 }

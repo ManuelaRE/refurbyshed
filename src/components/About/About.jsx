@@ -3,7 +3,6 @@ import Card from 'react-bootstrap/Card'
 import Col from "react-bootstrap/Col";
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
-import ListGroup from "react-bootstrap/ListGroup";
 import Row from 'react-bootstrap/Row';
 
 import styles from "./About.module.scss"
@@ -16,23 +15,23 @@ const About = () => {
       <Card className={styles.card}>
         <Card.Title className={styles.cardTitle}>About us</Card.Title>
         <Card.Body className={styles.cardBody}>
-          <Row>
             <Col>
               <Image src={give} className={styles.give} />
             </Col>
+            <Container>
             <Col className={styles.textSection}>
-              <Row>
+              {/* <Row>
                 The arts valuable role in mental health is being recognized.
-            </Row>
+              </Row>
               <Row>
                 It can help to boost confidence and make us feel more engaged and resilient. Besides these benefits, art engagement also alleviates anxiety, depression and stress.
-            </Row>
+            </Row> */}
               <Row>
-                At Refurbished we combine our passion for arts with our love of nature by restoring old furniture back to life.
-                All profits are put back into art supplies and expanding our locations.
+                <p>At Refurbished we combine our passion for arts with our love of nature by giving old furniture a second life.</p>
+                <p>We are not-for-profit. All earnings go back into art supplies and expanding our locations.</p>
             </Row>
             </Col>
-          </Row>
+          </Container>
         </Card.Body>
       </Card>
     </Container>

@@ -2,21 +2,18 @@ import React from 'react'
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import styles from "./Navbar.module.scss"
+
 
 const StickyNavbar = () => {
   return (
-    <Container>
-      <Navbar expand="lg" variant="light" bg="light">
-            <Container>
-            <Nav className="mr-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/listings">Listings</Nav.Link>
-              <Nav.Link href="/donate">Donate</Nav.Link>
-            </Nav>
-            </Container>
-          </Navbar>
-    </Container>
-
+    <Navbar expand="sm" className={styles.navBar}>
+      <Nav className={styles.navLink}>
+        <Nav.Link className={styles.navLink} href="/">Home</Nav.Link>
+        <Nav.Link className={styles.navLink} href="/listings">Listings</Nav.Link>
+        <Nav.Link className={styles.navLink} href="/donate">Donate</Nav.Link>
+      </Nav>
+    </Navbar>
   )
 }
 

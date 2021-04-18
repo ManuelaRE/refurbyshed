@@ -13,17 +13,19 @@
       font-family: 'Antonio', sans-serif;
       font-size: xx-large;
       padding-top: 3%;
+      color: #02040F;
+
     }
 
     .cardBody {
-      text-align: center;
-      font-family: 'Antonio', sans-serif;
-      font-size: x-large;
+      text-align: left;
+      font-family: 'Open Sans', sans-serif;
+      color: #02040F;
+      font-size: large;
 
       .list {
         background-color: #EDC300;
         margin: 5% 0;
-        // border: 2px solid red;
       }
 
       .image {
