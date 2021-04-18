@@ -10,7 +10,7 @@ export class CreateView extends Component {
   render() {
     const { name, make, condition, discription, type, imageUrl } = this.props;
     const decodedUri = decodeURIComponent(imageUrl);
-    console.log("type", type);
+
     return (
       <>
         <div className={styles.container}>

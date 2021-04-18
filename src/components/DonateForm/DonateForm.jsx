@@ -21,15 +21,28 @@ const DonateForm = () => {
   const [itemName, setItemName] = useState("");
   const [make, setMake] = useState("");
 
+  const readfichier = (e) => {
+    if (window.FileReader) {
+      var file = e.target.files[0];
+      var reader = new FileReader();
+      if (file && file.type.match("image.*")) {
+        reader.readAsDataURL(file);
+      } else {
+        console.log("HUH");
+      }
+      reader.onloadend = function (e) {
+        setImage(reader.result);
+      };
+    }
+  };
+
   const submitDonation = () => {
     if (!firebase.apps.length) {
       firebase.initializeApp(config);
     } else {
       firebase.app(); // if already initialized, use that one
     }
-
     const todoRef = firebase.database().ref("Form").child("donationForm");
-
     const item = {
       userName,
       email,
@@ -40,26 +53,8 @@ const DonateForm = () => {
       itemName,
       make,
     };
-
     todoRef.push(item);
     navigate("/donatecomplete");
-  };
-
-  const create = () => {
-    const todoRef = firebase.database().ref("Form");
-
-    const item = {
-      userName,
-      email,
-      type,
-      condition,
-      image,
-      description,
-      itemName,
-      make,
-    };
-
-    todoRef.push(item);
   };
 
   return (
@@ -155,7 +150,8 @@ const DonateForm = () => {
           <Form.File
             id="exampleFormControlFile1"
             label="Attach a image"
-            onChange={(e) => setImage(e.target.value)}
+            // onChange={(e) => setImage(e.target.value)}
+            onChange={(e) => readfichier(e)}
           />
         </Form.Group>
 
