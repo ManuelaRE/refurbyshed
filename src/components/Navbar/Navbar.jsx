@@ -6,12 +6,9 @@ import styles from "./StickyNavbar.module.scss";
 
 const StickyNavbar = () => {
   return (
-    <div className={styles.navContainer}>
-      <Container>
-        <Navbar expand="lg" variant="light" bg="light">
+        <Navbar expand="lg" variant="light" bg="light" className={styles.navContainer}>
           <Container>
-            <Nav>
-              <p className={styles.nav}>
+            <Nav className={styles.nav}>
                 <Nav.Link className={styles.link} href="/">
                   Home
                 </Nav.Link>
@@ -24,12 +21,9 @@ const StickyNavbar = () => {
                 <Nav.Link className={styles.link} href="/create">
                   Repair
                 </Nav.Link>
-              </p>
             </Nav>
           </Container>
         </Navbar>
-      </Container>
-    </div>
   );
 };
 

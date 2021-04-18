@@ -1,10 +1,12 @@
-p.nav {
-  display: inline-flex;
+.nav {
   width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .link {
-  width: 100px;
+  width: 25%;
+  text-align: center;
 }
 
 .navContainer {
