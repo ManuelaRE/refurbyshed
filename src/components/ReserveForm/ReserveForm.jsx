@@ -27,11 +27,7 @@ export class ReserveForm extends Component {
         <Form className="d-flex flex-column">
           <Form.Group controlId="formBasicName">
             <InputGroup className="mb-2">
-              <InputGroup.Prepend>
-                <InputGroup.Text>
-                  <Image src={nameImg} height="20" rounded />
-                </InputGroup.Text>
-              </InputGroup.Prepend>
+              <Image as={InputGroup.Prepend} src={nameImg} height="38" rounded/>
               <Form.Control
                 type="Name"
                 placeholder="Name"
@@ -43,11 +39,7 @@ export class ReserveForm extends Component {
 
           <Form.Group controlId="formBasicEmail">
             <InputGroup className="mb-2">
-              <InputGroup.Prepend>
-                <InputGroup.Text>
-                  <Image src={emailImg} height="20" rounded />
-                </InputGroup.Text>
-              </InputGroup.Prepend>
+              <Image as={InputGroup.Prepend} src={emailImg} height="38" rounded/>
               <Form.Control
                 type="Email"
                 placeholder="Email address"
@@ -59,11 +51,7 @@ export class ReserveForm extends Component {
 
           <Form.Group controlId="formBasicLocation">
             <InputGroup className="mb-2">
-              <InputGroup.Prepend>
-                <InputGroup.Text>
-                  <Image src={phoneImg} height="20" rounded />
-                </InputGroup.Text>
-              </InputGroup.Prepend>
+              <Image as={InputGroup.Prepend} src={phoneImg} height="38" rounded/>
               <Form.Control
                 type="number"
                 placeholder="Phone Number"
