@@ -13,7 +13,7 @@ const SubmitButton = (props) => {
 
   return (
     <Button
-      variant="primary"
+      variant="outline-secondary"
       disabled={isLoading}
       onClick={!isLoading ? handleClick : null}
       className="rounded-pill"

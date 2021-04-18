@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,MAAM,EAAE,KAAK;EACb,WAAW,EAAE,IAAI;EACjB,gBAAgB,EAAE,OAAO;CAS1B;;AAZD,AAIE,UAJQ,CAIR,MAAM,CAAC;EACL,UAAU,EAAE,MAAM;CACnB;;AANH,AAQE,UARQ,CAQR,OAAO,CAAC;EACN,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,MAAM;CACf;;AAGH,AAAA,cAAc,CAAC;EACb,cAAc,EAAE,KAAK;EACrB,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,KAAK;CACb",
-    "sources": [
-        "Donate.module.scss"
-    ],
-    "names": [],
-    "file": "Donate.module.css"
-}

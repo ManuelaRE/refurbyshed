@@ -19,7 +19,7 @@ class Routes extends Component {
         <Home default />
         <ItemListings path="/listings" />
         <ItemView path="/itemView/:name/:make/:price/:condition/:imageUrl" />
-        <CreateView path="/createview/:name/:make/:condition/:discription/:type/:imageUrl" />
+        <CreateView path="/createview/:name/:make/:condition/:description/:type/:imageUrl" />
         <Donate path="/donate" />
         <DonateComplete path="/donatecomplete" />
         <ReserveForm path="/reserveform" />

@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import styles from "./CreateView.module.scss";
 export class CreateView extends Component {
   render() {
-    const { name, make, condition, discription, type, imageUrl } = this.props;
+    const { name, make, condition, description, type, imageUrl } = this.props;
     const decodedUri = decodeURIComponent(imageUrl);
 
     return (
@@ -21,12 +21,12 @@ export class CreateView extends Component {
               <p className={styles.boldText}>Name: {name ?? type}</p>
               <p>Brand: {make ?? "Unknown"}</p>
               <p>Condition: {condition ?? "Unknown"}</p>
-              <p>Discription: {discription ?? "Needs repair"}</p>
+              <p>Description: {description ?? "Needs repair"}</p>
             </div>
           </Card>
           <Link to="/createform">
             <Button className={styles.button} variant="outline-primary">
-              Reserve
+              Book
             </Button>
           </Link>
           <Link to="/create">
