@@ -97,8 +97,8 @@ const DonateForm = () => {
         </Form.Group>
 
         <Form.Group>
-          <Form.Control as="select" onChange={(e) => setType(e.target.value)}>
-            <option disabled>Select donation item</option>
+          <Form.Control value={-1} key={-1} as="select" onChange={(e) => setType(e.target.value)}>
+            <option value={-1} disabled>Select donation item</option>
             <option>Chair</option>
             <option>Table</option>
             <option>Desk</option>
@@ -137,8 +137,9 @@ const DonateForm = () => {
             as="select"
             onChange={(e) => setCondition(e.target.value)}
             required
+            value={-1} key={-1}
           >
-            <option disabled>Item condition</option>
+            <option value={-1} disabled>Item condition</option>
             <option>Cosmetic damage only</option>
             <option>A little repair needed</option>
             <option>A lot of repair needed</option>
