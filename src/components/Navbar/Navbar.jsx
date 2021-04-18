@@ -22,7 +22,7 @@ const StickyNavbar = () => {
                   Donate
                 </Nav.Link>
                 <Nav.Link className={styles.link} href="/create">
-                  Create
+                  Repair
                 </Nav.Link>
               </p>
             </Nav>

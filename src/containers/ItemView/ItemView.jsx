@@ -3,6 +3,7 @@ import styles from "./ItemView.module.scss";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
+import { Link } from "@reach/router";
 
 export class ItemView extends Component {
   render() {
@@ -21,11 +22,14 @@ export class ItemView extends Component {
             <p>Condition: {condition}</p>
           </div>
         </Card>
-        {/* CLICKING ON RESERVE REDIRECTS TO FORM */}
-        <Button className={styles.button} variant="outline-primary">
-          Reserve
-        </Button>
-        <Button variant="outline-primary">Back</Button>
+        <Link to="/reserveform">
+          <Button className={styles.button} variant="outline-primary">
+            Reserve
+          </Button>
+        </Link>
+        <Link to="/listings">
+          <Button variant="outline-primary">Back</Button>
+        </Link>
       </Container>
     );
   }

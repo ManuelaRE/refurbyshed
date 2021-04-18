@@ -1,10 +1,11 @@
-div.container {
+.container {
   border-top-color: black;
   border-top-width: 2px;
   border-top-style: solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 2% 0;
 }
 
 div.imgContainer {
@@ -25,6 +26,11 @@ div.textContainer {
   text-align: left;
 }
 
+.textContainer p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
 div.namePrice {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,4 +44,4 @@ div.namePrice {
 p.buttonText {
   color: aliceblue;
 }
-/*# sourceMappingURL=SingleItem.module.css.map */
+/*# sourceMappingURL=CreateItem.module.css.map */

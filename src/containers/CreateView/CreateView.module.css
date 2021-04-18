@@ -1,7 +1,18 @@
-div.container {
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 40px;
+div.container .card {
+  margin: 3% 0;
+  padding: 3%;
+}
+
+div.container .card .cardTitle {
+  text-align: center;
+  font-family: "Antonio", sans-serif;
+  font-size: xx-large;
+  padding-top: 3%;
+  color: #02040f;
+}
+
+div.container .button {
+  margin-right: 2%;
 }
 
 div.imgContainer {
@@ -14,7 +25,7 @@ div.imgContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
@@ -34,6 +45,8 @@ div.namePrice {
 
 p {
   font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #02040f;
 }
 
 p.boldText {
@@ -53,4 +66,4 @@ div.link {
   border-color: red;
   border-style: solid;
 }
-/*# sourceMappingURL=ItemView.module.css.map */
+/*# sourceMappingURL=CreateView.module.css.map */

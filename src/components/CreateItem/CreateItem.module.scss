@@ -1,8 +1,9 @@
-div.container {
+.container {
   border-top-color: black;
   border-top-width: 2px;
   border-top-style: solid;
   display: flex;
+  padding: 2% 0;
 }
 
 div.imgContainer {
@@ -15,6 +16,11 @@ div.imgContainer {
 div.textContainer {
   width: 100%;
   text-align: left;
+}
+
+.textContainer p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
 div.namePrice {

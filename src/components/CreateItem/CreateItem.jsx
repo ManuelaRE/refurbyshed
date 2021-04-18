@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import styles from "./CreateItem.module.scss";
 import { Link } from "@reach/router";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
 
 export class CreateItem extends Component {
   render() {
     const { name, make, condition, discription, type, imageUrl } = this.props;
-    console.log("PROPS", type);
 
     return (
-      <div className={styles.container}>
+      <Container className={styles.container}>
         <div className={styles.imgContainer}>
           <img width="100" height="100" alt="my one" src={imageUrl} />
         </div>
@@ -24,10 +25,10 @@ export class CreateItem extends Component {
             )}`}
             className={styles.links}
           >
-            <p>More info</p>
+            <Button variant="outline-primary">More info</Button>
           </Link>
         </div>
-      </div>
+      </Container>
     );
   }
 }
