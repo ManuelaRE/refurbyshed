@@ -31,7 +31,7 @@ export class ItemListings extends Component {
   render() {
     return (
       <div>
-        <h1>Search bar</h1>
+        <h1>Furniture available to buy:</h1>
         {this.state.itemList.map((item, index) => {
           return (
             <SingleItem

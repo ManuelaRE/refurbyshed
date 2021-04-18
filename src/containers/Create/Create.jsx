@@ -30,7 +30,7 @@ export class Create extends Component {
   render() {
     return (
       <div>
-        <h1>Search bar</h1>
+        <h1>Furniture waiting to get refurbished:</h1>
         {this.state.itemList.map((item, index) => {
           return (
             <CreateItem
