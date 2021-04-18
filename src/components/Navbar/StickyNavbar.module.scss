@@ -1,0 +1,16 @@
+p.nav {
+  display: inline-flex;
+  width: 100%;
+}
+
+.link {
+  width: 100px;
+}
+
+.navContainer {
+  margin-top: 20px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: whitesmoke;
+}

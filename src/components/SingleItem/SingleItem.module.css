@@ -17,6 +17,7 @@ div.imgContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 10px;
 }
 
 div.textContainer {
@@ -31,5 +32,10 @@ div.namePrice {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-right: 10px;
+}
+
+p.buttonText {
+  color: aliceblue;
 }
 /*# sourceMappingURL=SingleItem.module.css.map */

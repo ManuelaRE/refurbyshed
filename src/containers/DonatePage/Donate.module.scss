@@ -1,14 +1,19 @@
 .container {
-    height: 100vh;
-    padding: 10px;
-    padding-top: 20px;
-    background-color: #58A4B0;
-    .title {
-        text-align: center;
-    }
+  height: 100vh;
+  padding-top: 20px;
+  background-color: #58a4b0;
+  .title {
+    text-align: center;
+  }
 
-    .submit {
-        border-radius: 5px;
-        margin: 0 auto;
-    }
+  .submit {
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+}
+
+.formContainer {
+  padding-bottom: 100px;
+  background-color: #58a4b0;
+  width: 100vw;
 }

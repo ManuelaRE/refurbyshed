@@ -10,6 +10,7 @@ div.imgContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 10px;
 }
 
 div.textContainer {
@@ -25,4 +26,9 @@ div.textContainer {
 div.namePrice {
   display: flex;
   justify-content: space-between;
+  padding-right: 10px;
+}
+
+p.buttonText {
+  color: aliceblue;
 }

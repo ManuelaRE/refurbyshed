@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: 'Antonio', sans-serif;
-    color: #02040F;
-  }
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Antonio", sans-serif;
+  color: #02040f;
+}
+
+div.container {
+  margin-bottom: 80px;
+}
