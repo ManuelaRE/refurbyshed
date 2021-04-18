@@ -7,6 +7,8 @@ import Image from "react-bootstrap/Image";
 import nameImg from "../../assets/Icons/name.png";
 import emailImg from "../../assets/Icons/email.png";
 import locationImg from "../../assets/Icons/location.png";
+import brandImg from "../../assets/Icons/brand.png";
+import itemNames from "../../assets/Icons/itemName.png";
 import { navigate } from "@reach/router";
 import firebase from "firebase";
 import config from "../../config";
@@ -110,7 +112,7 @@ const DonateForm = () => {
 
         <Form.Group controlId="formBasicName">
           <InputGroup className="mb-2">
-            <Image as={InputGroup.Prepend} src={nameImg} height="38" rounded />
+            <Image as={InputGroup.Prepend} src={itemNames} height="38" rounded />
             <Form.Control
               type="ItemName"
               placeholder="Item Name"
@@ -122,7 +124,7 @@ const DonateForm = () => {
 
         <Form.Group controlId="formBasicName">
           <InputGroup className="mb-2">
-            <Image as={InputGroup.Prepend} src={nameImg} height="38" rounded />
+            <Image as={InputGroup.Prepend} src={brandImg} height="38" rounded />
             <Form.Control
               type="ItemBrand"
               placeholder="Item Brand"

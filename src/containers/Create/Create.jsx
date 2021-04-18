@@ -45,7 +45,7 @@ export class Create extends Component {
                   condition={item.condition}
                   imageUrl={item.image}
                   type={item.type}
-                  discription={item.description}
+                  description={item.description}
                 />
               );
             })}
