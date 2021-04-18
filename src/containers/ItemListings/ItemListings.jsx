@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import firebase from "firebase";
 import config from "../../config";
 import SingleItem from "../../components/SingleItem/SingleItem";
-import NavBar from "../../components/Navbar";
+import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
+
+import styles from "./ItemListings.module.scss";
 
 export class ItemListings extends Component {
   state = {
@@ -30,21 +33,25 @@ export class ItemListings extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Furniture available to buy:</h1>
-        {this.state.itemList.map((item, index) => {
-          return (
-            <SingleItem
-              key={index}
-              name={item.name}
-              make={item.make}
-              condition={item.condition}
-              price={item.price}
-              imageUrl={item.imageUrl}
-            />
-          );
-        })}
-      </div>
+      <Container fluid className={styles.container}>
+        <Card className={styles.card}>
+          <Card.Title className={styles.cardTitle}>Listings</Card.Title>
+          <Card.Body>
+            {this.state.itemList.map((item, index) => {
+              return (
+                <SingleItem
+                  key={index}
+                  name={item.name}
+                  make={item.make}
+                  condition={item.condition}
+                  price={item.price}
+                  imageUrl={item.imageUrl}
+                />
+              );
+            })}
+          </Card.Body>
+        </Card>
+      </Container>
     );
   }
 }

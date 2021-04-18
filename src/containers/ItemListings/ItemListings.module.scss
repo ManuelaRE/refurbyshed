@@ -1,0 +1,19 @@
+.container {
+  background-color: #EDC300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    margin: 20px 0;
+
+    .cardTitle {
+      text-align: center;
+      font-family: 'Antonio', sans-serif;
+      font-size: xx-large;
+      padding-top: 3%;
+      color: #02040F;
+    }
+  }
+}
