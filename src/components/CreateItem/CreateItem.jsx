@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 
 export class CreateItem extends Component {
   render() {
-    const { name, make, condition, discription, type, imageUrl } = this.props;
+    const { name, make, condition, description, type, imageUrl } = this.props;
 
     return (
       <Container className={styles.container}>
@@ -20,7 +20,7 @@ export class CreateItem extends Component {
           <p>by {make}</p>
           <p>{condition}</p>
           <Link
-            to={`/createview/${name}/${make}/${condition}/${discription}/${type}/${encodeURIComponent(
+            to={`/createview/${name}/${make}/${condition}/${description}/${type}/${encodeURIComponent(
               imageUrl
             )}`}
             className={styles.links}
